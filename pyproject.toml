@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "grpcdemo"
+version = "0.1.0"
+description = "Python gRPC server demo with TLC implementation"
+authors = ["Vyacheslav Gudimov"]
+license = "Vyacheslav Gudimov"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+grpcio-tools = "^1.60.0"
+protobuf = "^4.25.1"
+grpcio = "^1.60.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,12 @@
+demo_proto_pb2_grpc.py
+demo_proto_pb2.py
+demo_proto_pb2.pyi
+*.key
+*.pem
+*.crt
+*.lock
+*.log
+.idea/
+.git/
+dist/
+__pycache__/

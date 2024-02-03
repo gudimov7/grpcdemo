@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package grpc_demo;
+
+service grpc_service {
+  rpc Ack (EmptyRequest) returns (BaseResponse);
+  rpc SendData (DataRequest) returns (BaseResponse);
+}
+
+message EmptyRequest {
+  uint32 RequestId = 1;
+}
+
+message DataRequest {
+  uint32 RequestId = 1;
+  string Name = 2;
+  uint32 Age = 3;
+  repeated int32 ListGrades = 4;
+}
+
+message BaseResponse {
+  uint32 RequestId = 1;
+  uint32 ResponseId = 2;
+  string Message = 3;
+}
